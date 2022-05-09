@@ -31,7 +31,8 @@ const app = new Vue (
             },
             // function che aggiunge un nuovo to do
             addNewTodo: function() {
-                this.toDoList.push(this.newTodo);
+                
+                this.toDoList.push({toDo: this.newTodo, done :''});
                 this.newTodo = "";
                 console.log(this.newTodo);
             }
