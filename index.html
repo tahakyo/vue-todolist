@@ -14,7 +14,22 @@
 
     <!-- app Vue-js -->
     <div id="root">
+        <!-- header -->
+        <header>
 
+        </header>
+        <!-- header -->
+        <!-- main -->
+        <main>
+            <div class="container">
+                <ul>
+                    <li v-for="(item, index) in toDoList">
+                        {{item.toDo}}
+                    </li>
+                </ul>
+            </div>
+        </main>
+        <!-- main -->
     </div>
     <!-- app Vue-js -->
 
