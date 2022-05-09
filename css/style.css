@@ -5,11 +5,25 @@
     box-sizing: border-box;
 }
 
-
+ul  {
+    list-style: none;
+}
 
 .container {
     background-color: azure;
     margin: 0 auto;
     width: 700px;
     height: 800px;
+}
+
+
+.done {
+    text-decoration: line-through;
+}
+
+.todo-actions {
+    float: right;
+}
+.todo-actions i {
+    font-size: 10px;
 }
