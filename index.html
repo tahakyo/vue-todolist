@@ -14,7 +14,7 @@
     integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
     crossorigin="anonymous"
     referrerpolicy="no-referrer"
-/>
+    />
     <!-- vue-js -->
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
 </head>
@@ -31,7 +31,7 @@
         <main>
             <div class="container">
                 <ul>
-                    <li v-for="(item, index) in toDoList">
+                    <li v-for="(item, index) in toDoList" :class="item.done ? 'done' : ''">
                         {{item.toDo}}
                         <div class="todo-actions">
                             <i class="fas fa-backspace"></i>
