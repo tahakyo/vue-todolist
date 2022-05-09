@@ -26,4 +26,5 @@ ul  {
 }
 .todo-actions i {
     font-size: 10px;
+    cursor: pointer;
 }

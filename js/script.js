@@ -13,16 +13,22 @@ const app = new Vue (
                     done : false,
                 },
                 {
-                    toDo : 'terzo compito da svolgere',
+                    toDo : 'Terzo compito da svolgere',
                     done : true,
                 },
                 {
-                    toDo : 'terzo compito da svolgere',
+                    toDo : 'Quarto compito da svolgere',
                     done : false,
                 }
             ]
         },
         methods : {
+            // function che rimuove un toDo al click di X
+            removeTodo: function (index) {
+                console.log('remove', index);
+                this.toDoList.splice(index, 1);
+
+            }
             
         }
     }

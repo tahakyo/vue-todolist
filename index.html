@@ -34,7 +34,7 @@
                     <li v-for="(item, index) in toDoList" :class="item.done ? 'done' : ''">
                         {{item.toDo}}
                         <div class="todo-actions">
-                            <i class="fas fa-backspace"></i>
+                            <i @click="removeTodo(index)" class="fas fa-backspace"></i>
                         </div>
                     </li>
                 </ul>
