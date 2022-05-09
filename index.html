@@ -24,7 +24,10 @@
     <div id="root">
         <!-- header -->
         <header>
-
+            <div class="add-todo">
+                <input type="text" placeholder="inserire nuovo toDo" v-model="newTodo">
+                <button @click="addNewTodo()">Aggiungi</button>
+            </div>
         </header>
         <!-- header -->
         <!-- main -->

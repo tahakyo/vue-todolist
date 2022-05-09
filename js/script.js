@@ -20,14 +20,20 @@ const app = new Vue (
                     toDo : 'Quarto compito da svolgere',
                     done : false,
                 }
-            ]
+            ],
+            newTodo :"",
         },
         methods : {
             // function che rimuove un toDo al click di X
             removeTodo: function (index) {
                 console.log('remove', index);
                 this.toDoList.splice(index, 1);
-
+            },
+            // function che aggiunge un nuovo to do
+            addNewTodo: function() {
+                this.toDoList.push(this.newTodo);
+                this.newTodo = "";
+                console.log(this.newTodo);
             }
             
         }
